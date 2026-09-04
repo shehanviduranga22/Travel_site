@@ -301,3 +301,128 @@ header h1 {
         transform: translateY(0px);
     }
 }
+
+@media (max-width: 768px) {
+    section {
+        padding: 30px 20px;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 12px 16px;
+        padding: 14px 20px 10px;
+        background-color: #202d2dcc;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .header-icon {
+        font-size: 20px;
+        gap: 10px;
+    }
+
+    .navBar {
+        grid-column: 1 / -1;
+        width: 100%;
+        gap: 4px;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+    }
+
+    .navBar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navBar li {
+        flex: 0 0 auto;
+    }
+
+    .navBar a {
+        display: block;
+        padding: 7px 10px;
+        font-size: 0.72rem;
+        white-space: nowrap;
+    }
+
+    .search-box.active {
+        top: 100%;
+    }
+
+    .home-text {
+        top: 47%;
+        width: min(100% - 32px, 560px);
+        padding: 18px 8px;
+        backdrop-filter: blur(3px);
+    }
+
+    .home-text h1 {
+        font-size: clamp(1.35rem, 6vw, 2rem);
+        line-height: 1.2;
+    }
+
+    .home-text p {
+        margin: 0.7rem 0 1.3rem;
+        font-size: 0.82rem;
+        line-height: 1.55;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 7px 16px;
+        font-size: 0.85rem;
+    }
+
+    .home-img {
+        top: auto;
+        bottom: 26px;
+        left: 20px;
+        font-size: 19px;
+        gap: 12px;
+    }
+
+    .slider-navigation {
+        top: auto;
+        bottom: 20px;
+        left: auto;
+        right: 20px;
+        transform: none;
+        max-width: calc(100% - 125px);
+        overflow-x: auto;
+        justify-content: flex-start;
+        scrollbar-width: none;
+    }
+
+    .slider-navigation::-webkit-scrollbar {
+        display: none;
+    }
+
+    .slider-navigation .nav-btn {
+        width: 48px;
+        height: 30px;
+        flex: 0 0 auto;
+        padding: 0;
+    }
+
+    .slider-navigation .nav-btn:not(:last-child) {
+        margin-right: 7px;
+    }
+}
+
+@media (max-width: 380px) {
+    .header-icon .bx-cart,
+    .header-icon .bx-head {
+        display: none;
+    }
+
+    .home-text {
+        top: 45%;
+    }
+
+    .home-text p {
+        font-size: 0.76rem;
+    }
+}

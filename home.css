@@ -235,27 +235,27 @@ header h1 {
 }
 
 .slider-navigation .nav-btn:nth-child(1) {
-    background-image: url("../images/1.png");
+    background-image: url("images/1.png");
     background-size: cover;
 }
 
 .slider-navigation .nav-btn:nth-child(2) {
-    background-image: url("../images/2.png");
+    background-image: url("images/2.png");
     background-size: cover;
 }
 
 .slider-navigation .nav-btn:nth-child(3) {
-    background-image: url("../images/3.png");
+    background-image: url("images/3.png");
     background-size: cover;
 }
 
 .slider-navigation .nav-btn:nth-child(4) {
-    background-image: url("../images/4.png");
+    background-image: url("images/4.png");
     background-size: cover;
 }
 
 .slider-navigation .nav-btn:nth-child(5) {
-    background-image: url("../images/5.png");
+    background-image: url("images/5.png");
     background-size: cover;
 }
 
